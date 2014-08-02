@@ -1,11 +1,11 @@
-var app = angular.module('videogallery', []);
+var app = angular.module('jaLogin', []);
 
 //CONFIG
 app.value('USERNAME', 'miusername');
 app.value('PASSWORD', 'mipassword');
 
 //CONTROLLERS
-app.controller('videogalleryController', 
+app.controller('jaLoginController', 
 	['$scope','$window','$location','LoginService', function
 	( $scope , $window , $location , LoginService ){
 
@@ -25,7 +25,7 @@ app.controller('videogalleryController',
 
 		$scope.user = {
 			username: 'Maria',
-			password: 'patata'
+			password: 'Password'
 		};
 }]);
 
