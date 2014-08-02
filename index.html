@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+     <title> AngularJS Login </title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+     <script src="app.js" type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="jaLogin" ng-controller="jaLoginController">
+	
+	<header>
+		<div class="center">
+			<img align="center" src="images/AngularJS.png" alt="AngularLogo" />
+		</div>
+	</header>
+
+	<div class="login-view center">
+		<div class="welcome">
+			<h2> Connect with our Angular Experts </h2>
+		</div>
+		
+		<form ng-submit="login()">
+			<input type="text" placeholder="Username" ng-model="user.username" autocorrect="off" autocapitalize="off"/>
+			<input type="password" placeholder="Password" ng-model="user.password"/>
+			<input type="submit" value="Enviar" ng-disabled="!user.username || !user.password"/>
+		</form>
+ 	</div>
+
+</body>
+</html>
