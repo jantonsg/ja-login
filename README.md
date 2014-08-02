@@ -1,4 +1,4 @@
-ja-videogallery
+ja-login
 ===============
 
-More testing
+Examples with AngularJS - Login
